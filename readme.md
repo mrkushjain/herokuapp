@@ -1,3 +1,4 @@
+App Link - [ rails-heroku-app-by-kush.herokuapp.com ](http://rails-heroku-app-by-kush.herokuapp.com/)
 # Setting Up Heroku Rails app
 
 1. Install **ruby-1.9.3-p392** using rvm 
@@ -158,4 +159,11 @@ $ brew install postgresql (on Mac)
     ```
     $ git remote -v
     ```
-
+# Renaming the app
+1. Go to heroku app dashboard on browser and click on settings next to the app
+2. Enter a new name and click on save
+3. On the terminal type
+   ```
+   heroku git:remote -a **newname**
+   ```
+4. Your new app is now accessible at new-name-of-app.herokuapp.com
