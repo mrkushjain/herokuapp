@@ -149,20 +149,26 @@ $ brew install postgresql (on Mac)
     ```
    
 # View your app info
+
 * Get Heroku Info
+
     ```
     $ heroku info
     ```
 * Get Remote info
+
     ```
     $ git remote -v
     ```
+
 # Renaming the app
+
 1. Go to heroku app dashboard on browser and click on settings next to the app
 2. Enter a new name and click on save
 3. On the terminal type
+
    ```
-   heroku git:remote -a newname
+   $ heroku git:remote -a newname
    ```
    where newname is the app's new name
 4. Your new app is now accessible at new-name-of-app.herokuapp.com
