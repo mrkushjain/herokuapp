@@ -190,7 +190,7 @@ Adding rspec tests
     $ bundle install
     ```
 
-3. Go to your terminal and use the save ruby version as you had you used while compiling postgres
+3. Go to your terminal and use the same ruby version as you had you used while compiling postgres
 
     ```
     $ rvm use ruby-1.9.3-p392
