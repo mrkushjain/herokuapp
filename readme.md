@@ -172,3 +172,38 @@ $ brew install postgresql (on Mac)
    ```
    where newname is the app's new name
 4. Your new app is now accessible at new-name-of-app.herokuapp.com
+
+# Adding Tests
+
+Adding rspec tests
+==================
+
+1. Add rspec rails in your gemfile
+    ```
+    group :development, :test do
+      gem 'rspec-rails'
+    end
+    ```
+2. Run bundle install
+
+    ```
+    $ bundle install
+    ```
+
+3. Go to your terminal and use the save ruby version as you had you used while compiling postgres
+
+    ```
+    $ rvm use ruby-1.9.3-p392
+    ```
+
+4. Initialize the spec/ directory
+
+    ```
+    $ rails generate rspec:install
+    ```
+
+5. Run Tests with
+
+    ```
+    $ bundle exec rake spec
+    ```
