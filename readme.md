@@ -207,3 +207,20 @@ Adding rspec tests
     ```
     $ bundle exec rake spec
     ```
+
+Adding Factory Girl
+===================
+
+1. Add gem factory_girl_rails under development and test groups
+    ```
+    group :development, :test do
+      gem 'rspec-rails'
+      gem 'factory_girl_rails'
+    end
+    ```
+2. Run bundle install
+
+    ```
+    $ bundle install
+    ```
+
