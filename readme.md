@@ -66,11 +66,16 @@ $ brew install postgresql (on Mac)
     ```
     password: password1
     ```
-    everywhere in the file
+    everywhere in the file. Then add the line
+    ```
+    host: localhost
+    ```
+    at the end of each group
    
 12. Create database
 
     ```
+    $ rake db:migrate
     $ rake db:setup
     ```
 
@@ -168,6 +173,7 @@ $ brew install postgresql (on Mac)
 3. On the terminal type
 
    ```
+   $ git remote rm heroku
    $ heroku git:remote -a newname
    ```
    where newname is the app's new name
@@ -224,3 +230,18 @@ Adding Factory Girl
     $ bundle install
     ```
 
+Adding Should matchers
+=======================
+1. Add gem shoulda matchers in your gem under test
+    ```
+    group :test do
+      gem "shoulda-matchers"
+    end
+
+    ```
+
+2. Run bundle install
+
+    ```
+    $ bundle install
+    ```
